@@ -16,14 +16,24 @@
 /// @return Retorna una bandera para confirmar de que se ingreso un numero entero
 int ingresoDeNumeros(char* mensaje,char* mensageDeOrden,int* numeroIngresar){
 	    int retorno;
+	    int auxiliar;
 	    retorno=0;
-		printf("\n%s",mensaje);
-		fflush(stdin);
-		scanf("%d",&*numeroIngresar);
-		if(numeroIngresar != NULL){
+
+
+			printf("\n%s",mensaje);
+			fflush(stdin);
+			auxiliar=scanf("%d",&*numeroIngresar);
+		/*do{
+	    }while(!auxiliar);*/
+
+		if(!auxiliar){
+			printf("\n*ERROR* LO INGRESADO NO ES UN NUMERO\n");
+
+		}else{
 			retorno=1;
 			printf("\n%s %d",mensageDeOrden,*numeroIngresar);
 		}
+
 
 		return retorno;
 }
