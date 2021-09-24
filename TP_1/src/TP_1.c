@@ -1,11 +1,11 @@
 /*
  ============================================================================
  Name        : TP_1.c
- Author      : 
+ Author      : Viñas Nicolas
  Version     :
  Copyright   : Your copyright notice
- Description :
- Hacer una calculadora. Para ello el programa iniciará y contará con un menú de opciones:
+ Description : Hacer una calculadora
+ Para ello el programa iniciará y contará con un menú de opciones:
 
 1. Ingresar 1er operando (A=x)
 2. Ingresar 2do operando (B=y)
