@@ -61,52 +61,52 @@ int addEmployee(Employee* list, int len){
 	return retorno;
 }
 /// @fn void initChar(char*, char*)
-/// @brief Deja al usuario ingresar un char
+/// @brief Let the user enter a char
 ///
 /// @param palabra
-/// permite ingresar un char
+/// Allows to enter a char
 /// @param mensaje
-/// Muestra un mensaje por printf
+/// Show a message by printf
 void initChar(char* palabra,char* mensaje){
 	printf("%s",mensaje);
 	fflush(stdin);
 	scanf("%s",palabra);
 }
 /// @fn void initInt(int*, char*)
-/// @brief Deja al usuario ingresar un int
+/// @brief Let the user enter an int
 ///
 /// @param numero
-/// permite ingresar un int
+/// Allows to enter an int
 /// @param mensaje
-/// Muestra un mensaje por printf
+/// Show a message by printf
 void initInt(int* numero,char* mensaje){
 	printf("%s",mensaje);
 	fflush(stdin);
 	scanf("%d",&*numero);
 }
 /// @fn void initFloat(float*, char*)
-/// @brief Deja al usuario ingresar un float
+/// @brief Let the user enter a float
 ///
 /// @param Flotante
-///  permite ingresar un float
+/// Allows to enter a float
 /// @param mensaje
-/// Muestra un mensaje por printf
+/// Show a message by printf
 void initFloat(float* Flotante,char* mensaje){
 	printf("%s",mensaje);
 	fflush(stdin);
 	scanf("%f",&*Flotante);
 }
 /// @fn void mostrar(int, char*, char*, char*)
-/// @brief Muestra una respuesta segun el retorno que tenga
+/// @brief Show an answer according to the return you have
 ///
 /// @param opcion
-/// Usa el retorno para dar una respuesta
+/// Use return to give an answer
 /// @param mesajeUno
-/// Muestra un mensaje segun corresponda
+/// Display a message as appropriate
 /// @param mesajeDos
-/// Muestra un mensaje segun corresponda
+/// Display a message as appropriate
 /// @param mesajeTres
-/// Muestra un mensaje segun corresponda
+/// Display a message as appropriate
 void mostrar(int opcion,char* mesajeUno,char* mesajeDos,char* mesajeTres){
 	switch(opcion){
 		case -1:
@@ -121,19 +121,19 @@ void mostrar(int opcion,char* mesajeUno,char* mesajeDos,char* mesajeTres){
 	}
 }
 /// @fn void mostrarSolo(char*)
-/// @brief muestra un mensaje
+/// @brief show a message
 ///
 /// @param mensaje
 void mostrarSolo(char* mensaje){
 	printf("%s\n",mensaje);
 }
 /// @fn int cambiar(Employee*, int)
-/// @brief Pregunta ina ID, depues si queres eliminarlo y si queres lo elimina
+/// @brief Ask ina ID, then if you want to delete it and if you want to delete it
 ///
 /// @param list
-/// Estructura de usuario
+/// User structure
 /// @param len
-/// Cantidad de usuarios
+/// Users quantity
 /// @return
 int cambiar(Employee* list, int len){
 	int retorno;
@@ -182,7 +182,7 @@ int findEmployeeById(Employee* list, int len,int id){
 	return retorno;
 }
 /// @fn void mostrarDatos(Employee*, int)
-/// @brief Muestra los datos ingresados en lista por un for.
+/// @brief Displays the data entered in the list by a for.
 ///
 /// @param list
 /// @param len
@@ -197,7 +197,7 @@ void mostrarDatos(Employee* list, int len){
 	}
 }
 /// @fn void mostrarUno(Employee*, int)
-/// @brief Muestra un Empleado
+/// @brief Show an Employee
 ///
 /// @param list
 /// @param listado
@@ -293,8 +293,8 @@ int sortEmployees(Employee* list, int len){
 	return retorno;
 }
 /// @fn void sacarPromedio(Employee*, int)
-/// @brief Suma y promedia los salarios de los empleados.
-/// Muestra e resultado
+/// @brief Add and average employee wages.
+/// Sample and result
 ///
 /// @param list
 /// @param len
